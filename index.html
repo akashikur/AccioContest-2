@@ -1,0 +1,145 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="bar">
+          <a style="float: left">Library System</a>
+          <a>Logout</a>
+          <a>Contacts Us</a>
+          <a href="#Register">Register</a>
+          <a href="#Books">Books</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Book section -->
+    <section class="Books" id="Books">
+      <h2>Books</h2>
+      <table>
+        <tr>
+          <th>Book ID</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Genre</th>
+          <th>Availability</th>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>
+            <a
+              href="https://www.barnesandnoble.com/w/macbeth-william-shakespeare/1116742173;jsessionid=39A2178546548C425473CEBCD7CD5977.prodny_store01-atgap14?ean=9781451694727"
+              target="_blank"
+              >Macbeth</a
+            >
+            <table class="bookTitle">
+              <tr>
+                <td>Published Date: 10/08/2013</td>
+              </tr>
+              <tr>
+                <td>Page count: 304</td>
+              </tr>
+              <tr>
+                <td>ISBN:0743477103</td>
+              </tr>
+            </table>
+          </td>
+          <td>William Shakespeare</td>
+          <td>Thriller</td>
+          <td>Availabe</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            <a
+              href="https://www.barnesandnoble.com/w/hamlet-william-shakespeare/1116670752?ean=9781451669411"
+              target="_blank"
+              >Hamlet</a
+            >
+            <table class="bookTitle">
+              <tr>
+                <td>Published Date:04/24/2012</td>
+              </tr>
+              <tr>
+                <td>Page count:432</td>
+              </tr>
+              <tr>
+                <td>ISBN:9781451669411</td>
+              </tr>
+            </table>
+          </td>
+          <td>William Shakespeare</td>
+          <td>Drama</td>
+          <td>Availabe</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>
+            <a
+              href="https://www.barnesandnoble.com/w/othello-william-shakespeare/1116742114?ean=9781501146299"
+              target="_blank"
+              >Othello</a
+            >
+            <table class="bookTitle">
+              <tr>
+                <td>Published Date:06/13/2017</td>
+              </tr>
+              <tr>
+                <td>Page count:416</td>
+              </tr>
+              <tr>
+                <td>ISBN:9781501146299</td>
+              </tr>
+            </table>
+          </td>
+          <td>William Shakespeare</td>
+          <td>Tragedy</td>
+          <td>Availabe</td>
+        </tr>
+      </table>
+    </section>
+    <!-- Register section -->
+    <section class="Register" id="Register">
+      <h2>Register</h2>
+      <form method="get">
+        <div>
+          <label for="fname">First Name</label><br />
+          <input type="text" name="fname" id="fname" required />
+        </div>
+        <div>
+          <label for="lname">Last Name</label><br />
+          <input type="text" name="lname" id="lname" required />
+        </div>
+        <div>
+          <label for="DOB">Date Of Birth</label><br />
+          <input type="date" name="DOB" id="DOB" required />
+        </div>
+        <div>
+          <label for="age">Age</label><br />
+          <input type="number" name="age" id="age" min="5" max="100" required />
+        </div>
+        <div>
+          <label for="email">Email</label><br />
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div>
+          <label for="password">Password</label><br />
+          <input type="password" name="password" id="password" required />
+        </div>
+        <div>
+          <label for="assword">Conform Password</label><br />
+          <input type="password" name="password" id="password" required />
+        </div>
+        <div class="submit">
+          <input type="submit" value="Register" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
